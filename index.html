@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MENTE De ELITE</title>
-  <meta name="description" content="Acesso restrito ao protocolo mental da MENTE De ELITE. Entre agora e saia do padrão comum." />
-  <meta name="theme-color" content="#05070d" />
+  <title>Código Pineal | MENTE De ELITE</title>
+  <meta name="description" content="Acesse o Código Pineal da MENTE De ELITE e comece a reorganizar identidade, foco e direção mental com um método direto e prático." />
+  <meta name="theme-color" content="#0A0A0F" />
+  <meta property="og:title" content="Código Pineal | MENTE De ELITE" />
+  <meta property="og:description" content="Pare de repetir o mesmo padrão mental. Acesse o próximo passo da MENTE De ELITE." />
+  <meta property="og:type" content="website" />
   <style>
     :root {
-      --bg: #030508;
-      --bg2: #081019;
-      --panel: rgba(10, 16, 28, 0.86);
-      --panel-strong: rgba(9, 15, 27, 0.96);
-      --line: rgba(255,255,255,.08);
-      --text: #f5f8ff;
-      --muted: #9db1c8;
-      --soft: #d7e5f6;
-      --brand: #57d9ff;
-      --brand2: #8e7fff;
-      --accent: #3bf3b2;
-      --danger: #ff8d8d;
-      --shadow: 0 30px 80px rgba(0,0,0,.45);
-      --radius: 26px;
-      --max: 1180px;
+      --black: #0A0A0F;
+      --ink: #10141B;
+      --steel: #1B3A5C;
+      --gold: #C9A24B;
+      --gold-2: #F0D37A;
+      --teal: #59D9C8;
+      --red: #E35E5E;
+      --text: #F7F4EA;
+      --muted: #B7C0CA;
+      --line: rgba(255,255,255,.13);
+      --soft: rgba(255,255,255,.06);
+      --max: 1120px;
+      --radius: 8px;
+      --shadow: 0 24px 70px rgba(0,0,0,.42);
     }
 
     * { box-sizing: border-box; }
@@ -32,11 +34,9 @@
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 10% 0%, rgba(87,217,255,.16), transparent 22%),
-        radial-gradient(circle at 90% 10%, rgba(142,127,255,.14), transparent 24%),
-        radial-gradient(circle at 50% 35%, rgba(59,243,178,.05), transparent 25%),
-        linear-gradient(180deg, #020305 0%, #050911 44%, #030508 100%);
-      line-height: 1.55;
+        linear-gradient(180deg, rgba(27,58,92,.36), transparent 320px),
+        linear-gradient(135deg, #07070B 0%, #10141B 46%, #07080B 100%);
+      line-height: 1.5;
       overflow-x: hidden;
     }
 
@@ -46,715 +46,516 @@
       inset: 0;
       pointer-events: none;
       background-image:
-        linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.018) 1px, transparent 1px);
-      background-size: 38px 38px;
-      mask-image: linear-gradient(180deg, rgba(255,255,255,.6), transparent 84%);
-      opacity: .42;
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 42px 42px;
+      opacity: .5;
+      mask-image: linear-gradient(180deg, #000, transparent 82%);
     }
 
     a { color: inherit; text-decoration: none; }
-    img, video { max-width: 100%; display: block; }
+    video { display: block; max-width: 100%; }
     .container { width: min(calc(100% - 32px), var(--max)); margin: 0 auto; }
 
     .topbar {
       position: sticky;
       top: 0;
       z-index: 50;
-      backdrop-filter: blur(18px);
-      background: rgba(2, 4, 8, .78);
-      border-bottom: 1px solid rgba(255,255,255,.06);
+      background: rgba(10,10,15,.88);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(16px);
     }
 
     .topbar-inner {
       width: min(calc(100% - 32px), var(--max));
       margin: 0 auto;
+      min-height: 64px;
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      align-items: center;
       gap: 16px;
-      padding: 10px 0;
     }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 0;
-    }
-
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
     .brand-mark {
-      width: 42px;
-      height: 42px;
-      border-radius: 14px;
+      width: 40px;
+      height: 40px;
       display: grid;
       place-items: center;
-      background: linear-gradient(135deg, rgba(87,217,255,.18), rgba(142,127,255,.24));
-      border: 1px solid rgba(255,255,255,.1);
-      box-shadow: var(--shadow);
-      font-size: 12px;
+      border: 1px solid rgba(201,162,75,.55);
+      background: #111820;
+      color: var(--gold-2);
       font-weight: 900;
-      letter-spacing: .12em;
+      font-size: 12px;
+      letter-spacing: .08em;
+      border-radius: var(--radius);
     }
-
-    .brand-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-    .brand-text strong { font-size: 14px; letter-spacing: .14em; text-transform: uppercase; }
-    .brand-text span { color: var(--muted); font-size: 12px; }
-
-    .top-meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: flex-end;
-    }
-
-    .chip {
-      padding: 8px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.08);
-      background: rgba(255,255,255,.04);
+    .brand strong { display: block; font-size: 14px; letter-spacing: .12em; }
+    .brand span { display: block; color: var(--muted); font-size: 12px; }
+    .top-actions { display: flex; align-items: center; gap: 10px; }
+    .top-actions span {
       color: var(--muted);
       font-size: 12px;
+      border: 1px solid var(--line);
+      padding: 8px 10px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.04);
       white-space: nowrap;
     }
 
-    .hero {
-      position: relative;
-      padding: 50px 0 26px;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      right: -120px;
-      top: 0;
-      width: 360px;
-      height: 360px;
-      border-radius: 999px;
-      background: radial-gradient(circle, rgba(87,217,255,.16), transparent 68%);
-      filter: blur(30px);
-      pointer-events: none;
-    }
-
+    .hero { padding: 48px 0 28px; }
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.06fr .94fr;
-      gap: 30px;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
       align-items: center;
+      gap: 34px;
     }
-
     .eyebrow {
       display: inline-flex;
       align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      margin-bottom: 18px;
-      border-radius: 999px;
-      border: 1px solid rgba(87,217,255,.24);
-      background: rgba(87,217,255,.08);
-      color: #dbf4ff;
+      gap: 8px;
+      color: var(--gold-2);
+      border: 1px solid rgba(201,162,75,.35);
+      background: rgba(201,162,75,.08);
+      padding: 8px 12px;
+      border-radius: var(--radius);
       font-size: 12px;
-      letter-spacing: .12em;
+      font-weight: 900;
+      letter-spacing: .11em;
       text-transform: uppercase;
-      font-weight: 900;
+      margin-bottom: 18px;
     }
 
-    h1, h2, h3 { margin: 0; line-height: 1.02; letter-spacing: -.035em; }
-    h1 { font-size: clamp(40px, 6vw, 76px); margin-bottom: 16px; }
-    h2 { font-size: clamp(28px, 4vw, 46px); margin-bottom: 16px; }
-    h3 { font-size: clamp(22px, 2vw, 30px); }
-
-    .glow {
-      background: linear-gradient(90deg, #ffffff 0%, #adf0ff 44%, #c0bfff 100%);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-    }
-
+    h1, h2, h3 { margin: 0; letter-spacing: 0; line-height: 1.04; }
+    h1 { font-size: clamp(38px, 6vw, 72px); margin-bottom: 18px; max-width: 12ch; }
+    h2 { font-size: clamp(28px, 4vw, 46px); margin-bottom: 14px; }
+    h3 { font-size: clamp(20px, 2.4vw, 28px); }
+    .gold { color: var(--gold-2); }
     .hero-sub {
+      color: #E5EAF1;
       font-size: clamp(17px, 2vw, 21px);
-      color: var(--soft);
-      max-width: 58ch;
-      margin: 0 0 22px;
+      max-width: 60ch;
+      margin: 0 0 24px;
     }
-
-    .bullet-list {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 28px;
+    .proof-line {
       display: grid;
-      gap: 12px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 24px 0 0;
     }
-
-    .bullet-list li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: #eef5ff;
+    .proof-line div {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.045);
+      border-radius: var(--radius);
+      padding: 14px;
+      min-height: 92px;
     }
+    .proof-line strong { display: block; font-size: 26px; line-height: 1; color: var(--gold-2); margin-bottom: 8px; }
+    .proof-line span { color: var(--muted); font-size: 13px; }
 
-    .check {
-      width: 24px;
-      height: 24px;
-      flex: 0 0 24px;
-      border-radius: 999px;
-      display: grid;
-      place-items: center;
-      font-size: 14px;
-      font-weight: 900;
-      color: #04140f;
-      background: linear-gradient(135deg, #3bf3b2, #90ffd7);
-      box-shadow: 0 12px 24px rgba(59,243,178,.22);
-      margin-top: 1px;
-    }
-
-    .cta-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      align-items: center;
-      margin-bottom: 12px;
-    }
-
+    .btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 24px 0 10px; }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
-      padding: 18px 28px;
-      border-radius: 18px;
-      font-size: 16px;
+      min-height: 56px;
+      padding: 16px 24px;
+      border-radius: var(--radius);
       font-weight: 900;
-      letter-spacing: .01em;
-      border: 0;
-      cursor: pointer;
-      transition: transform .2s ease, box-shadow .2s ease, opacity .2s ease;
+      font-size: 16px;
       text-align: center;
-      text-decoration: none;
+      border: 1px solid transparent;
+      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
     }
-
     .btn:hover { transform: translateY(-2px); }
-
     .btn-primary {
-      color: #04111a;
-      background: linear-gradient(135deg, #7cf1ff 0%, #57d9ff 44%, #3bf3b2 100%);
-      box-shadow: 0 20px 45px rgba(87,217,255,.25);
+      color: #100D05;
+      background: linear-gradient(135deg, var(--gold-2), var(--gold));
+      box-shadow: 0 18px 48px rgba(201,162,75,.28);
     }
-
     .btn-secondary {
       color: var(--text);
+      border-color: var(--line);
       background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.1);
     }
-
-    .microcopy {
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.45;
-    }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 14px;
-      margin-top: 28px;
-    }
-
-    .stat-card {
-      background: rgba(255,255,255,.04);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 18px;
-      padding: 16px;
-      box-shadow: var(--shadow);
-    }
-
-    .stat-card strong {
-      display: block;
-      font-size: clamp(22px, 2.8vw, 34px);
-      margin-bottom: 6px;
-      letter-spacing: -.03em;
-    }
-
-    .stat-card span {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .hero-media {
-      position: relative;
-    }
+    .microcopy { color: var(--muted); font-size: 13px; max-width: 52ch; }
 
     .video-shell {
       position: relative;
       max-width: 430px;
       margin-left: auto;
-      border-radius: 30px;
-      padding: 14px;
+      padding: 10px;
+      border: 1px solid rgba(201,162,75,.32);
       background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-      border: 1px solid rgba(255,255,255,.1);
+      border-radius: var(--radius);
       box-shadow: var(--shadow);
     }
-
-    .video-shell::before {
-      content: "";
-      position: absolute;
-      inset: -2px;
-      border-radius: 32px;
-      background: linear-gradient(135deg, rgba(87,217,255,.28), rgba(142,127,255,.12), rgba(59,243,178,.16));
-      z-index: -1;
-      filter: blur(12px);
-      opacity: .9;
-    }
-
     .video-card {
       position: relative;
-      overflow: hidden;
-      border-radius: 24px;
-      background: #000;
       aspect-ratio: 2 / 3;
+      overflow: hidden;
+      background: #000;
+      border-radius: var(--radius);
     }
-
-    .video-card video {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .video-overlay {
+    .video-card video { width: 100%; height: 100%; object-fit: cover; }
+    .video-caption {
       position: absolute;
       left: 0;
       right: 0;
       bottom: 0;
       padding: 18px;
-      background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.76) 80%);
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,.84));
     }
-
-    .video-badge {
+    .video-caption span {
       display: inline-flex;
-      align-items: center;
-      gap: 8px;
       margin-bottom: 10px;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(0,0,0,.5);
-      border: 1px solid rgba(255,255,255,.14);
+      color: var(--gold-2);
+      border: 1px solid rgba(201,162,75,.35);
+      background: rgba(0,0,0,.42);
+      padding: 6px 9px;
+      border-radius: var(--radius);
       font-size: 12px;
       font-weight: 800;
-      letter-spacing: .08em;
       text-transform: uppercase;
+      letter-spacing: .08em;
     }
+    .video-caption strong { display: block; font-size: 18px; line-height: 1.18; }
 
-    .section {
-      padding: 34px 0;
+    .section { padding: 36px 0; }
+    .band {
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      padding: 22px 0;
     }
-
-    .panel {
-      background: linear-gradient(180deg, rgba(11,18,30,.94), rgba(7,12,22,.96));
-      border: 1px solid rgba(255,255,255,.08);
+    .beliefs {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .beliefs div {
+      padding: 16px;
       border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(10,10,15,.62);
+      color: #E6ECF4;
+      font-size: 14px;
+    }
+
+    .split { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
+    .panel {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.045);
+      border-radius: var(--radius);
+      padding: 24px;
       box-shadow: var(--shadow);
     }
-
-    .belief-strip {
+    .label {
+      display: inline-block;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .panel p, .wide p { color: var(--muted); margin: 0; }
+    .list { list-style: none; padding: 0; margin: 18px 0 0; display: grid; gap: 12px; }
+    .list li { display: flex; gap: 10px; align-items: flex-start; color: #E5EAF1; }
+    .check {
+      width: 22px;
+      height: 22px;
+      flex: 0 0 22px;
       display: grid;
-      grid-template-columns: repeat(4, minmax(0,1fr));
+      place-items: center;
+      color: #0A0A0F;
+      background: var(--gold-2);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      margin-top: 1px;
+    }
+
+    .wide {
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, rgba(201,162,75,.09), rgba(89,217,200,.05), rgba(255,255,255,.035));
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
+    }
+    .mechanism {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
+      margin-top: 20px;
+    }
+    .mechanism div {
+      background: rgba(10,10,15,.72);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
       padding: 18px;
     }
-
-    .belief-item {
-      padding: 16px;
-      border-radius: 18px;
-      background: rgba(255,255,255,.03);
-      border: 1px solid rgba(255,255,255,.07);
-      color: var(--soft);
-      font-size: 14px;
-      text-align: center;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
-      gap: 20px;
-    }
-
-    .content-card {
-      padding: 26px;
-      border-radius: 24px;
-      background: rgba(255,255,255,.035);
-      border: 1px solid rgba(255,255,255,.08);
-    }
-
-    .mini-label {
-      color: var(--brand);
-      font-size: 12px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      margin-bottom: 12px;
-      display: inline-block;
-    }
-
-    .stack-list {
-      list-style: none;
-      padding: 0;
-      margin: 18px 0 0;
-      display: grid;
-      gap: 12px;
-    }
-
-    .stack-list li {
-      padding: 14px 16px;
-      border-radius: 16px;
-      background: rgba(255,255,255,.035);
-      border: 1px solid rgba(255,255,255,.07);
-      color: var(--soft);
-    }
+    .mechanism strong { display: block; color: var(--gold-2); margin-bottom: 8px; }
+    .mechanism span { color: var(--muted); font-size: 14px; }
 
     .offer {
-      padding: 30px;
       display: grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 24px;
-      align-items: center;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+      align-items: stretch;
     }
-
     .offer-box {
-      padding: 24px;
-      border-radius: 24px;
-      background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.03));
-      border: 1px solid rgba(255,255,255,.08);
+      border: 1px solid rgba(201,162,75,.35);
+      background: linear-gradient(180deg, rgba(201,162,75,.12), rgba(255,255,255,.045));
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow);
     }
-
-    .offer-points {
-      list-style: none;
-      padding: 0;
+    .price-note {
       margin: 18px 0 0;
-      display: grid;
-      gap: 12px;
-    }
-
-    .offer-points li {
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      color: var(--soft);
-    }
-
-    .timer-box {
-      padding: 24px;
-      border-radius: 24px;
-      background: rgba(255,255,255,.035);
-      border: 1px solid rgba(255,255,255,.07);
-      text-align: center;
-    }
-
-    .timer-label {
-      color: var(--muted);
-      font-size: 12px;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .12em;
-      margin-bottom: 10px;
-    }
-
-    .timer {
-      font-size: clamp(34px, 6vw, 56px);
-      font-weight: 900;
-      letter-spacing: -.05em;
-      line-height: 1;
-      margin-bottom: 10px;
-    }
-
-    .danger-line {
-      color: #ffd0d0;
+      padding: 14px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,.22);
+      color: #E9EDF3;
       font-size: 14px;
-      opacity: .92;
     }
+    .timer-box {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.045);
+      border-radius: var(--radius);
+      padding: 28px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      min-height: 100%;
+    }
+    .timer-label { color: var(--muted); font-weight: 900; font-size: 12px; letter-spacing: .11em; text-transform: uppercase; }
+    .timer { font-size: clamp(38px, 7vw, 64px); font-weight: 900; color: var(--gold-2); line-height: 1; margin: 12px 0; }
+    .timer-box p { margin: 0; color: var(--muted); }
 
     .lead-section {
-      padding: 28px;
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 18px;
       align-items: center;
-    }
-
-    .lead-copy p { margin: 8px 0 0; color: var(--muted); }
-
-    .lead-form {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      justify-content: flex-end;
-    }
-
-    .lead-form input {
-      min-width: min(100%, 340px);
-      padding: 18px 18px;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,.1);
+      border: 1px solid var(--line);
       background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .lead-form { display: flex; flex-wrap: wrap; gap: 10px; justify-content: flex-end; }
+    .lead-form input {
+      min-width: min(100%, 320px);
+      min-height: 56px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: rgba(0,0,0,.2);
       color: var(--text);
-      outline: none;
+      padding: 0 16px;
       font-size: 16px;
+      outline: none;
     }
+    .lead-form input::placeholder { color: #8794A3; }
+    .lead-note, .lead-success, .lead-error { font-size: 13px; margin-top: 8px; color: var(--muted); }
+    .lead-success { display: none; color: #92FFE2; }
+    .lead-error { display: none; color: #FFB1B1; }
 
-    .lead-form input::placeholder { color: #8ea3bb; }
-
-    .lead-note,
-    .lead-success,
-    .lead-error {
-      font-size: 13px;
-      margin-top: 10px;
-    }
-    .lead-note { color: var(--muted); }
-    .lead-success { color: #97ffcf; display: none; }
-    .lead-error { color: #ffabab; display: none; }
-
-    .faq {
-      display: grid;
-      gap: 14px;
-    }
-
+    .faq { display: grid; gap: 12px; }
     .faq-item {
-      padding: 22px;
-      border-radius: 20px;
-      background: rgba(255,255,255,.035);
-      border: 1px solid rgba(255,255,255,.08);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius: var(--radius);
+      padding: 20px;
     }
+    .faq-item strong { display: block; font-size: 18px; margin-bottom: 6px; color: #fff; }
+    .faq-item p { color: var(--muted); margin: 0; }
 
-    .faq-item strong {
-      display: block;
-      margin-bottom: 8px;
-      font-size: 18px;
-    }
-
-    .faq-item p {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .closing {
-      text-align: center;
-      padding: 34px 24px 90px;
-    }
-
-    .closing p {
-      margin: 14px auto 24px;
-      max-width: 54ch;
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    .footer {
-      padding: 0 0 120px;
-      color: #7f94ac;
-      text-align: center;
-      font-size: 13px;
-    }
-
+    .closing { text-align: center; padding: 44px 24px 92px; }
+    .closing p { max-width: 58ch; margin: 12px auto 24px; color: var(--muted); font-size: 18px; }
+    .footer { padding: 0 0 120px; text-align: center; color: #7F8996; font-size: 13px; }
     .sticky-bar {
       position: fixed;
-      left: 14px;
-      right: 14px;
-      bottom: 14px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
       z-index: 80;
       display: none;
       align-items: center;
-      gap: 12px;
-      padding: 12px;
-      border-radius: 20px;
-      border: 1px solid rgba(255,255,255,.09);
-      background: rgba(4, 8, 15, .92);
-      backdrop-filter: blur(18px);
+      gap: 10px;
+      padding: 10px;
+      border-radius: var(--radius);
+      background: rgba(10,10,15,.94);
+      border: 1px solid var(--line);
       box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
     }
-
     .sticky-copy { flex: 1; min-width: 0; }
     .sticky-copy strong { display: block; font-size: 13px; }
-    .sticky-copy span { display: block; font-size: 11px; color: var(--muted); }
+    .sticky-copy span { display: block; color: var(--muted); font-size: 11px; }
 
-    @media (max-width: 980px) {
-      .hero-grid,
-      .split,
-      .offer,
-      .lead-section {
-        grid-template-columns: 1fr;
-      }
-
-      .hero-media { order: -1; }
+    @media (max-width: 920px) {
+      .hero-grid, .split, .offer, .lead-section { grid-template-columns: 1fr; }
       .video-shell { margin: 0 auto; }
+      h1 { max-width: 100%; }
+      .proof-line, .beliefs, .mechanism { grid-template-columns: 1fr; }
       .lead-form { justify-content: stretch; }
-      .belief-strip,
-      .stats { grid-template-columns: 1fr 1fr; }
     }
 
-    @media (max-width: 760px) {
+    @media (max-width: 680px) {
+      .topbar-inner { align-items: flex-start; padding: 10px 0; }
+      .top-actions { display: none; }
       .hero { padding-top: 28px; }
-      .topbar-inner { align-items: flex-start; }
-      .top-meta { justify-content: flex-start; }
-      .belief-strip,
-      .stats { grid-template-columns: 1fr; }
-      .content-card,
-      .offer,
-      .lead-section,
-      .closing,
-      .offer-box,
-      .timer-box { padding: 22px; }
-      .btn { width: 100%; }
-      .cta-row { align-items: stretch; }
+      .btn, .lead-form input { width: 100%; }
+      .btn-row { align-items: stretch; }
+      .panel, .wide, .offer-box, .timer-box, .lead-section { padding: 20px; }
       .sticky-bar { display: flex; }
-      .footer { padding-bottom: 110px; }
-      .lead-form input { min-width: 0; width: 100%; }
+      .sticky-bar .btn { width: auto; min-width: 150px; min-height: 50px; padding: 12px 14px; }
+      .footer { padding-bottom: 108px; }
     }
   </style>
 </head>
 <body>
-  <div class="topbar">
+  <header class="topbar">
     <div class="topbar-inner">
-      <div class="brand">
+      <a class="brand" href="#top" aria-label="MENTE De ELITE">
         <div class="brand-mark">MDE</div>
-        <div class="brand-text">
+        <div>
           <strong>MENTE De ELITE</strong>
-          <span>Ciência, reprogramação mental e alta performance</span>
+          <span>Código Pineal</span>
         </div>
-      </div>
-      <div class="top-meta">
-        <div class="chip">Acesso restrito</div>
-        <div class="chip">Checkout direto</div>
-        <div class="chip">Decisão em 1 clique</div>
+      </a>
+      <div class="top-actions">
+        <span>Acesso imediato</span>
+        <span>Checkout Kiwify</span>
+        <span>Sem enrolação</span>
       </div>
     </div>
-  </div>
+  </header>
 
-  <main>
+  <main id="top">
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          <div class="eyebrow">Não é conteúdo para curiosos</div>
-          <h1><span class="glow" id="headline">O código mental para sair do padrão comum e operar com clareza, direção e presença.</span></h1>
-          <p class="hero-sub" id="subheadline">Entre agora no ambiente da MENTE De ELITE e acesse o próximo nível da sua construção mental. Sem voltas, sem enrolação, sem dispersão.</p>
+          <div class="eyebrow">Para quem veio dos vídeos e sentiu que era sobre você</div>
+          <h1>Você não é fraco. Você está repetindo um <span class="gold">comando antigo.</span></h1>
+          <p class="hero-sub">O Código Pineal é o acesso da MENTE De ELITE para quem quer parar de viver no automático e começar a reorganizar identidade, foco e direção mental com profundidade e prática.</p>
 
-          <ul class="bullet-list">
-            <li><span class="check">✓</span><span>Uma experiência direta e intensa para tirar você do impacto e levar para a decisão.</span></li>
-            <li><span class="check">✓</span><span>Linguagem, identidade e atmosfera alinhadas com quem rejeita o padrão comum.</span></li>
-            <li><span class="check">✓</span><span>Acesso imediato ao próximo passo, sem desviar sua atenção no momento mais quente.</span></li>
-          </ul>
-
-          <div class="cta-row">
-            <a class="btn btn-primary" href="https://pay.kiwify.com.br/miHsEfA" id="primaryCta" target="_blank" rel="noopener">Quero acessar agora</a>
-            <a class="btn btn-secondary" href="#aviso">Ainda não vou entrar agora</a>
+          <div class="btn-row">
+            <a class="btn btn-primary checkout-link" href="https://pay.kiwify.com.br/miHsEfA?utm_source=landing&utm_medium=botao_hero&utm_campaign=codigo_pineal" target="_blank" rel="noopener">Quero acessar o Código Pineal</a>
+            <a class="btn btn-secondary" href="#mecanismo">Entender antes</a>
           </div>
-          <div class="microcopy">Assista, sinta o clima e, quando fizer sentido para você, toque no botão principal para seguir.</div>
+          <div class="microcopy">Compra em ambiente seguro pela Kiwify. A decisão é sua; a página só remove o ruído do caminho.</div>
 
-          <div class="stats">
-            <div class="stat-card">
-              <strong>+200k</strong>
-              <span>pessoas alcançadas por um conteúdo que já chamou atenção de forma massiva</span>
-            </div>
-            <div class="stat-card">
-              <strong>24h</strong>
-              <span>de janela ativa para você decidir enquanto a intenção ainda está viva</span>
-            </div>
-            <div class="stat-card">
-              <strong>1 clique</strong>
-              <span>até o próximo passo, sem desvios, sem ruído, sem quebra de ritmo</span>
-            </div>
+          <div class="proof-line" aria-label="Sinais da comunidade">
+            <div><strong>+400</strong><span>visualizações em conteúdos recentes mesmo com a página ainda pequena</span></div>
+            <div><strong>CODIGO</strong><span>comentários como sinal de intenção e entrada no funil</span></div>
+            <div><strong>1 passo</strong><span>do vídeo para o acesso, sem perder atenção no meio</span></div>
           </div>
         </div>
 
-        <div class="hero-media">
-          <div class="video-shell">
-            <div class="video-card">
-              <video controls playsinline preload="metadata" poster="" aria-label="Vídeo da MENTE De ELITE">
-                <source src="animar.mp4" type="video/mp4" />
-                Seu navegador não suporta vídeo.
-              </video>
-              <div class="video-overlay">
-                <div class="video-badge">Acesso restrito</div>
-                <strong style="font-size: 20px; display:block; margin-bottom: 4px;">A atmosfera certa para quem não se identifica com o padrão comum.</strong>
-                <span style="color:#d2dced; font-size:14px;">Quando estiver pronto, toque no botão e siga para a próxima etapa.</span>
-              </div>
+        <div class="video-shell">
+          <div class="video-card">
+            <video controls playsinline preload="metadata" aria-label="Vídeo da MENTE De ELITE">
+              <source src="animar.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo.
+            </video>
+            <div class="video-caption">
+              <span>Assista antes</span>
+              <strong>Se isso bater em você, o próximo passo está logo abaixo.</strong>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="container panel belief-strip">
-        <div class="belief-item">Você não precisa de mais ruído. Precisa de comando mental.</div>
-        <div class="belief-item">Quem continua no automático continua perdendo energia, foco e direção.</div>
-        <div class="belief-item">Aqui a ideia é simples: romper o padrão comum e operar acima dele.</div>
-        <div class="belief-item">A decisão certa precisa acontecer enquanto a mente ainda está acesa.</div>
+    <section class="band" aria-label="Crenças centrais">
+      <div class="container beliefs">
+        <div>O problema não é falta de informação. É identidade rodando no automático.</div>
+        <div>Foco sem comando interno vira força de vontade cansada.</div>
+        <div>Você muda quando troca o padrão que decide antes de você perceber.</div>
+        <div>O próximo nível precisa ser simples, direto e repetível.</div>
       </div>
     </section>
 
     <section class="section">
       <div class="container split">
-        <div class="content-card panel">
-          <span class="mini-label">O que você ativa aqui</span>
-          <h2>Mais clareza. Mais presença. Mais direção.</h2>
-          <p style="color: var(--muted); margin: 0;">Isso é para quem cansou de perder energia com distração, indecisão e ruído mental. O foco aqui é reprogramar o estado interno para agir com mais intenção.</p>
-          <ul class="stack-list">
-            <li><strong>Clareza mental:</strong> para sair da confusão e voltar a enxergar com precisão.</li>
-            <li><strong>Presença:</strong> para não continuar vivendo no automático.</li>
-            <li><strong>Direção:</strong> para transformar intensidade em movimento real.</li>
+        <div class="panel">
+          <span class="label">O custo invisível</span>
+          <h2>Você pode estar tentando vencer usando uma mente programada para recuar.</h2>
+          <p>Por fora parece procrastinação, oscilação ou falta de foco. Por dentro, muitas vezes é só um comando antigo repetindo segurança, medo, culpa ou confusão.</p>
+          <ul class="list">
+            <li><span class="check">✓</span><span>Você começa empolgado e abandona quando a emoção muda.</span></li>
+            <li><span class="check">✓</span><span>Você sabe o que deveria fazer, mas não sustenta o estado interno.</span></li>
+            <li><span class="check">✓</span><span>Você consome conteúdo profundo, mas ainda precisa de um método para aplicar.</span></li>
           </ul>
         </div>
 
-        <div class="content-card panel">
-          <span class="mini-label">Para quem isso foi feito</span>
-          <h2>Para quem sente que nasceu para mais e já não aceita viver abaixo disso.</h2>
-          <p style="color: var(--muted); margin: 0;">Se você rejeita mediocridade, sente que sua mente precisa entrar em ordem e quer operar acima do padrão comum, esse acesso foi construído para você.</p>
-          <ul class="stack-list">
-            <li><strong>Se você trava:</strong> precisa reorganizar o eixo mental.</li>
-            <li><strong>Se você oscila:</strong> precisa de constância interna.</li>
-            <li><strong>Se você sabe que pode mais:</strong> precisa entrar no ambiente certo.</li>
+        <div class="panel">
+          <span class="label">A virada</span>
+          <h2>A mente muda quando a identidade recebe uma ordem clara.</h2>
+          <p>O Código Pineal organiza a mensagem central da MENTE De ELITE em um caminho prático: perceber o padrão, nomear o comando, instalar uma nova direção e repetir até virar identidade.</p>
+          <ul class="list">
+            <li><span class="check">✓</span><span>Menos ruído mental e mais decisão.</span></li>
+            <li><span class="check">✓</span><span>Mais consciência sobre os gatilhos que te puxam para baixo.</span></li>
+            <li><span class="check">✓</span><span>Um próximo passo claro em vez de só mais um vídeo salvo.</span></li>
           </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="mecanismo">
+      <div class="container wide">
+        <span class="label">O mecanismo</span>
+        <h2>Não é motivação. É reprogramação de comando.</h2>
+        <p>O método trabalha com uma sequência simples para tirar a mente da reação automática e conduzir para uma identidade mais consciente. Sem promessa milagrosa, sem pressão vazia: só um processo direto para você praticar.</p>
+        <div class="mechanism">
+          <div><strong>1. Ver o padrão</strong><span>Identificar o pensamento ou reação que se repete antes da sua decisão consciente.</span></div>
+          <div><strong>2. Trocar o comando</strong><span>Substituir a narrativa antiga por uma frase de direção e identidade.</span></div>
+          <div><strong>3. Fixar pela prática</strong><span>Repetir o novo comando em momentos reais até ele ficar mais natural.</span></div>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container panel offer">
+      <div class="container offer">
         <div class="offer-box">
-          <span class="mini-label">Acesso imediato</span>
-          <h2 id="offerTitle">Entre agora no ambiente da MENTE De ELITE</h2>
-          <p style="color: var(--muted); margin: 0;">Se você já entendeu que permanecer no padrão comum custa caro, não arraste essa decisão. Entre agora e vá direto para a etapa final.</p>
-          <ul class="offer-points">
-            <li><span class="check">✓</span><span>Acesso imediato ao próximo passo.</span></li>
-            <li><span class="check">✓</span><span>Ambiente direto, sem distrações desnecessárias.</span></li>
-            <li><span class="check">✓</span><span>Janela de decisão ativa por 24 horas no seu navegador.</span></li>
+          <span class="label">Oferta principal</span>
+          <h2>Entre agora no Código Pineal da MENTE De ELITE.</h2>
+          <p>Se você chegou até aqui, o conteúdo já cumpriu o papel dele: acender a percepção. Agora o próximo passo é transformar percepção em prática.</p>
+          <ul class="list">
+            <li><span class="check">✓</span><span>Acesso ao material central da MENTE De ELITE.</span></li>
+            <li><span class="check">✓</span><span>Estrutura para aplicar identidade, foco e direção mental.</span></li>
+            <li><span class="check">✓</span><span>Entrada direta pelo checkout seguro da Kiwify.</span></li>
+            <li><span class="check">✓</span><span>Mensagem e CTA alinhados com os vídeos: saiu do automático, entra no método.</span></li>
           </ul>
-          <div class="cta-row" style="margin-top: 24px; margin-bottom: 0;">
-            <a class="btn btn-primary" href="https://pay.kiwify.com.br/miHsEfA" id="secondaryCta" target="_blank" rel="noopener">Acessar a oferta agora</a>
+          <div class="price-note">O valor exato aparece no checkout. O ponto aqui é simples: se o padrão antigo está custando sua clareza, adiar também tem preço.</div>
+          <div class="btn-row">
+            <a class="btn btn-primary checkout-link" href="https://pay.kiwify.com.br/miHsEfA?utm_source=landing&utm_medium=botao_oferta&utm_campaign=codigo_pineal" target="_blank" rel="noopener">Acessar pela Kiwify</a>
           </div>
         </div>
 
         <div class="timer-box">
-          <div class="timer-label">Urgência desta sessão</div>
+          <div class="timer-label">Janela desta sessão</div>
           <div class="timer" id="timer">24:00:00</div>
-          <div class="danger-line">Essa janela existe para tirar a decisão da inércia. Se vai entrar, entra enquanto a intenção está viva.</div>
+          <p>Use essa janela como compromisso com a própria decisão. Se for entrar, entra enquanto sua atenção ainda está viva.</p>
         </div>
       </div>
     </section>
 
     <section class="section" id="aviso">
-      <div class="container panel lead-section">
-        <div class="lead-copy">
-          <span class="mini-label">Opção secundária</span>
-          <h3>Ainda não vai entrar agora? Deixe seu melhor e-mail.</h3>
-          <p>Se hoje não for o momento de entrar, deixe seu contato para não perder a chance de voltar depois.</p>
+      <div class="container lead-section">
+        <div>
+          <span class="label">Ainda não decidiu?</span>
+          <h3>Deixe seu e-mail para receber um novo chamado da MENTE De ELITE.</h3>
+          <p style="color: var(--muted); margin: 8px 0 0;">Use isso só se você realmente quer voltar depois. O caminho mais forte continua sendo acessar agora.</p>
         </div>
-
         <div>
           <form class="lead-form" id="leadForm" novalidate>
             <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" autocomplete="email" required />
             <button class="btn btn-primary" type="submit" id="leadButton">Quero ser avisado</button>
           </form>
-          <div class="lead-note" id="leadNote">Essa opção é para quem ainda não vai entrar agora, mas quer manter o acesso no radar.</div>
+          <div class="lead-note" id="leadNote">Seu e-mail fica registrado para retorno do funil.</div>
           <div class="lead-success" id="leadSuccess">E-mail enviado com sucesso. Você será avisado.</div>
           <div class="lead-error" id="leadError">Digite um e-mail válido antes de enviar.</div>
         </div>
@@ -763,47 +564,49 @@
 
     <section class="section">
       <div class="container faq">
-        <div class="faq-item panel">
-          <strong>Isso é para quem?</strong>
-          <p>Para quem sente que já cansou de conteúdo vazio, rotina mental confusa e promessas rasas. Aqui o foco é decisão, direção e profundidade.</p>
+        <div class="faq-item">
+          <strong>Isso é curso, PDF ou comunidade?</strong>
+          <p>É o acesso da MENTE De ELITE no checkout da Kiwify. A página foi feita para levar você ao material principal sem ruído.</p>
         </div>
-        <div class="faq-item panel">
-          <strong>O que acontece se eu deixar meu e-mail?</strong>
-          <p>Você entra para a lista de aviso e pode receber um novo chamado para voltar quando fizer sentido.</p>
+        <div class="faq-item">
+          <strong>Promete resultado?</strong>
+          <p>Não. Resultado depende de aplicação. A promessa aqui é entregar uma direção mais clara para você trabalhar identidade, foco e padrão mental.</p>
         </div>
-        <div class="faq-item panel">
-          <strong>Preciso decidir agora?</strong>
-          <p>Você decide no seu tempo. Mas a decisão mais poderosa acontece enquanto a sua atenção ainda está viva.</p>
+        <div class="faq-item">
+          <strong>Por que a página fala tanto de automático?</strong>
+          <p>Porque esse é o ponto central dos vídeos: muita gente acha que está escolhendo, mas está só repetindo um comando antigo.</p>
+        </div>
+        <div class="faq-item">
+          <strong>E se eu fechar agora?</strong>
+          <p>Você pode voltar depois, mas a intenção tende a esfriar. Se a mensagem encaixou, o melhor momento de agir é enquanto ela ainda está clara.</p>
         </div>
       </div>
     </section>
 
     <section class="section">
-      <div class="container panel closing">
-        <span class="mini-label">Decisão final</span>
-        <h2>Quem continua adiando continua servindo ao mesmo padrão mental.</h2>
-        <p>Se a sua mente já entendeu que continuar no mesmo padrão custa caro, não adie mais o próximo passo.</p>
-        <a class="btn btn-primary" href="https://pay.kiwify.com.br/miHsEfA" target="_blank" rel="noopener">Entrar agora</a>
+      <div class="container wide closing">
+        <span class="label">Decisão final</span>
+        <h2>Não transforme mais uma percepção forte em outro conteúdo esquecido.</h2>
+        <p>Se você entendeu que o padrão antigo está comandando mais do que deveria, entre no Código Pineal e faça disso uma prática.</p>
+        <a class="btn btn-primary checkout-link" href="https://pay.kiwify.com.br/miHsEfA?utm_source=landing&utm_medium=botao_final&utm_campaign=codigo_pineal" target="_blank" rel="noopener">Entrar no Código Pineal agora</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer container">
-    MENTE De ELITE
-  </footer>
+  <footer class="footer container">MENTE De ELITE | Código Pineal</footer>
 
   <div class="sticky-bar">
     <div class="sticky-copy">
-      <strong>MENTE De ELITE</strong>
-      <span id="stickyText">Acesso imediato</span>
+      <strong>Código Pineal</strong>
+      <span>Acesso imediato pela Kiwify</span>
     </div>
-    <a class="btn btn-primary" href="https://pay.kiwify.com.br/miHsEfA" target="_blank" rel="noopener" style="padding:16px 18px; min-width: 160px;">Entrar agora</a>
+    <a class="btn btn-primary checkout-link" href="https://pay.kiwify.com.br/miHsEfA?utm_source=landing&utm_medium=sticky_mobile&utm_campaign=codigo_pineal" target="_blank" rel="noopener">Acessar</a>
   </div>
 
   <script>
     (function() {
       const timerEl = document.getElementById('timer');
-      const storageKey = 'mde_deadline';
+      const storageKey = 'mde_codigo_pineal_deadline';
       let deadline = Number(localStorage.getItem(storageKey));
       const now = Date.now();
 
@@ -813,19 +616,16 @@
       }
 
       function tick() {
-        const diff = deadline - Date.now();
-        if (diff <= 0) {
+        if (deadline <= Date.now()) {
           deadline = Date.now() + (24 * 60 * 60 * 1000);
           localStorage.setItem(storageKey, String(deadline));
         }
-
         const remain = Math.max(0, deadline - Date.now());
         const hours = Math.floor(remain / 3600000);
         const minutes = Math.floor((remain % 3600000) / 60000);
         const seconds = Math.floor((remain % 60000) / 1000);
-
-        timerEl.textContent = [hours, minutes, seconds].map(function(v) {
-          return String(v).padStart(2, '0');
+        timerEl.textContent = [hours, minutes, seconds].map(function(value) {
+          return String(value).padStart(2, '0');
         }).join(':');
       }
 
@@ -858,12 +658,10 @@
         fetch(endpoint, {
           method: 'POST',
           mode: 'no-cors',
-          headers: {
-            'Content-Type': 'text/plain;charset=utf-8'
-          },
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({
             email: email.value.trim().toLowerCase(),
-            source: 'landing-mente-de-elite',
+            source: 'landing-codigo-pineal-v2',
             page_url: window.location.href,
             user_agent: navigator.userAgent
           })
